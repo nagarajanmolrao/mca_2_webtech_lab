@@ -1,0 +1,12 @@
+table
+{
+	width:60%;
+	border:3px solid;
+	align:center;
+	border-color:#E40F13;
+	bgcolor:#A2A2A2;
+}
+th,td
+{
+	border:1px solid black;
+}
