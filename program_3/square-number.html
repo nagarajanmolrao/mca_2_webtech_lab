@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+	<head>
+		<title>DEMONSTRATION OF NUMBER AND ITS SQUARE</title>
+		<script type="text/javascript">
+			var n=prompt("enter positive value: ");
+			while(n<=0){
+				alert("enter positive value");
+				n=prompt("enter positive value: ");
+			}
+			var msg="the sqaure(s) of \n";
+			var i=1;
+			var square;
+			for(i=1;i<=n;i++)
+				{
+					square = i*i;
+					msg += i + ": " + square + "\n";
+				}
+			alert(msg);
+		</script>
+	</head>
+	<body>
+		<a href="program_3.html">Click here to go back to program 3 HomePage</a>
+	</body>
+</html>

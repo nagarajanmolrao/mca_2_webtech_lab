@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+	<head>
+		<title>DEMONSTRATION OF FIBONACCI SERIES</title>
+		<script language="javascript">
+			var a=0, b=1, c=0;
+			var n = prompt("Enter valid input: ");
+			if(n!=null && n>0)
+				{
+					document.write("fibonacci series are <br>");
+					if (n==1)
+						{
+							document.write(a)
+						}
+					else{
+						document.write(a+"<br>"+b+"<br>");
+						
+						for (i=3; i<=n; i++)
+							{
+								c=a+b;
+								document.write(c+"<br>");
+								a=b;
+								b=c;
+							}
+					}
+				}
+			else
+			{
+				document.write("Enter only valid input !");
+			}
+		</script>
+	</head>
+	<body>
+		<a href="program_3.html">Click here to go back to program 3 HomePage</a>
+	</body>
+</html>
