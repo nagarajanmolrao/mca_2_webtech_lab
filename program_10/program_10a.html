@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Character limit in a Textarea element with Counter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <textarea id="myTextarea" cols="50"></textarea>
+        <p id="textCounter" style="font:15px Arial;">15 Characters limit</p>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function() {
+        $('#myTextarea').on('input propertychange', function() {
+            charLimit(this, 15);
+        });
+    });
+
+    function charLimit(input, maxChar) {
+        var len = $(input).val().length;
+        $('#textCounter').text(maxChar - len + ' characters remaining');
+        
+        if (len > maxChar) {
+            $(input).val($(input).val().substring(0, maxChar));
+            $('#textCounter').text(0 + ' characters remaining');
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>jQuery - Enable or Disable Button</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <input id="ac" type="checkbox"/>I accept<br>  
+    <input type="submit" id="submit" disabled="true" />
+<script>
+	$(function() {
+    $('#ac').click(function() {
+        if ($(this).is(':checked')) {
+            $('#submit').removeAttr('disabled');
+        } else {
+			$('#submit').attr('disabled', 'disabled');
+        }
+    });
+});
+</script>
+</body>
+</html>

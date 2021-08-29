@@ -1,64 +1,45 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html>
-	<head>
-		<title>Demonstration of CSS</title> 
-		<link rel="stylesheet" href="st.css">
-		<style>
-			h3
-			{
-				font-family:Garamond;
-				color:red;
-			}
-		</style>
-	</head>
-	<body>
-		<h1><center>Demonstration os CSS - internal,inline and external style sheet</center></h1>
-		<h3><u>UNIX</u></h3>
-		<p style="font-family:verdana;font-size:20pt;color:blue">
-			Unix is a computer Operating System which is capable of handling activities from multiple users at the same time. The development of Unix started around 1969 at AT&T Bell Labs by Ken Thompson and Dennis Ritchie. This tutorial gives a very good understanding on Unix.
-		</p>
-		<h3>Web Programming</h3>
-		<p>In 1995, Netscape introduced a client-side scripting language called javascript following program to add some dynamic elements.</p>
-		<h3>Software Engineering</h3>
-		<p>When the first digital computer appeared in the early 1940, the instruction to make them operate were wired into the machine.</p>
-		<h3>Web programming Tools</h3>
-		<ul>
-			<li>HTML</li>
-			<li>HTML-5</li>
-			<li>XHTML</li>
-		</ul>
-		<h3>Student DataBase</h3>
-		<table>
-			<tr>
-				<th>REGNO</th>
-				<th>NAME</th>
-				<th>CLASS</th>
-				<th>PERCENTAGE</th>
-			</tr>
-			<tr>
-				<td>1OX20BCS077</td>
-				<td>Snegha Chinnadurai</td>
-				<td>B.Sc ComputerScience</td>
-				<td>75%</td>
-			</tr>
-			<tr>
-				<td>1OX20BC055</td>
-				<td>Bharath</td>
-				<td>BCA</td>
-				<td>73%</td>
-			</tr>
-			<tr>
-				<td>1OX20BC007</td>
-				<td>Dhananjaya</td>
-				<td>BCA</td>
-				<td>77%</td>
-			</tr>
-			<tr>
-				<td>1OX20BC060</td>
-				<td>Sachin</td>
-				<td>BCA</td>
-				<td>71%</td>
-			</tr>
+<<html>
+<head>
+<link href="st.css" rel="stylesheet" type="text/css">
+</head>
+<style type='text/css'>
+       ul.a {
+               list-style-type: circle;
+               }
+       ol.b {
+               list-style-type: upper-roman;
+               }
+       table, th, td {
+                            border: 1px solid black;
+	                  text-align:left;	
+	                  width:200;
+	                  height:50;
+	                  padding:10pt;
+                           }
+</style>
+<body bgcolor=pink>
+          <h1 style="color:blue">Example of inline stylesheets</h1>
+	<p style="color:red"><font face="Verdana">Header1</font></p>
+	<p style="color:blue"><font face="Arial" size="12">Header2</font></p>
+	<p style="color:red"><font face="Times New Roman" size="11">header3</font></p>
+
+<p class="special">this paragraph should have special green text.
+Unordered List items<ul class="a">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+		</ul><br/>
+		Ordered List items<ol class="b">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+		</ol><br/>
+		<table   >
+		<tr><th>SlNo</th><th>Name</th><th>Contact</th><th>Location</th></tr>
+<tr><td>1</td><td>ABC</td><td>12213213</td><td>Bangalore</td></tr>
+		<tr><td>2</td><td>DEF</td><td>453545</td><td>Chennai</td></tr>
+		<tr><td>3</td><td>XYZ</td><td>46456546</td><td>Delhi</td></tr>
 		</table>
-	</body>
+</body>
 </html>
